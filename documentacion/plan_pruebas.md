@@ -17,20 +17,38 @@ las pruebas estarán planteadas para los siguientes modulos.
 
 ## Roles y permisos
 Se identificaran dos roles, los cuales son los que interactuaran con el sistema, pero cada uno de ellos tendrá sus respectivos permisos y tendrán funcionalidades independientes a las que podrán acceder.
-Roles: Administrador Colaborador
-            SI           SI
-Funcionalidad	                             Administrador	              Colaborador
-Iniciar sesión	                                Sí	                        Sí
-Crear cuenta	                          Proceso restringido	        Mediante administrador
-Editar perfil propio	                          Sí	                        Sí
-Cambiar contraseña propia	                      Sí	                        Sí
-Crear colaboradores	                            Sí	                        No
-Desactivar colaboradores	                      Sí	                        No
-Crear tareas	                                  Sí	                        No
-Asignar tareas	                                Sí	                        No
-Consultar todas las tareas	                    Sí	                        Sí
-Modificar tareas	                              Sí	             Solo las asignadas, según permisos
-Cambiar estado a ejecución o desarrollada	      Sí	                  Solo las asignadas
-Cancelar tareas	                                Sí	                        No
-Eliminar tareas	                        Sí, según autorización	            No
+### Roles
+Administrador y Colaborador
+### Funcionalidades
+Iniciar sesión,   
+Crear cuenta,
+Editar perfil propio,
+Cambiar contraseña propia,
+Crear colaboradores,
+Desactivar colaboradores,
+Crear tareas,
+Asignar tareas,
+Consultar todas las tareas,
+Modificar tareas,
+Cambiar estado a ejecución o desarrollada,
+Cancelar tareas,
+Eliminar tareas.
+
+
+# Estrategia para el desarrollo de las pruebas
+La estrategia establece cómo vamos a comprobar que el sistema cumple los requisitos. Para ello, utilizaremos pruebas manuales y automatizadas, apoyándonos en GitHub para organizar la documentación y registrar los defectos encontrados.
+
+## Pruebas manuales
+Son aquellas que ejecuta una persona siguiendo una serie de pasos previamente definidos. El responsable introduce datos, interactúa con el sistema y compara el resultado obtenido con el resultado esperado.
+
+En nuestro proyecto se utilizarán principalmente para:
+- Comprobar el inicio de sesión con credenciales válidas e inválidas.
+- Verificar la creación y administración de colaboradores.
+- Comprobar que el administrador pueda crear y asignar tareas.
+- Verificar que los colaboradores consulten todas las tareas, pero solo puedan modificar el estado de las que tienen asignadas.
+- Comprobar que un colaborador no pueda cancelar tareas.
+- Evaluar que los mensajes de error sean comprensibles.
+- Comprobar que la navegación y las funcionalidades sean fáciles de utilizar.
+
+
 
