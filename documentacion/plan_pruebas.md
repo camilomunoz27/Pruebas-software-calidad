@@ -17,6 +17,8 @@ las pruebas estarán planteadas para los siguientes modulos.
 
 ## Roles y permisos
 Se identificaran dos roles, los cuales son los que interactuaran con el sistema, pero cada uno de ellos tendrá sus respectivos permisos y tendrán funcionalidades independientes a las que podrán acceder.
+Roles: Administrador Colaborador
+            SI           SI
 Funcionalidad	                             Administrador	              Colaborador
 Iniciar sesión	                                Sí	                        Sí
 Crear cuenta	                          Proceso restringido	        Mediante administrador
